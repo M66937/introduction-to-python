@@ -18,7 +18,7 @@ def ball_volume(ball_radius):
 # -------------------------
 # Main program
 # -------------------------
-ball_pit_radius=int(input("enter the radius of the ball pit in metres"))
+ball_pit_radius=float(input("enter the radius of the ball pit in metres"))
 ball_pit_height=float(input("enter the height of the ball pit in metres"))
 ball_radius=float(input("enter the radius of one ball in metres"))
 packing_density = 0.75  # Volume taken up by the balls
