@@ -5,12 +5,9 @@
 # -------------------------
 def c_to_f(centigrade):
   fahrenheit=int(input((centigrade*1.8)+32))
-  
 # -------------------------
 # Main program
 # -------------------------
 centigrade=int(input("enter the centigrade"))
-c_to_f(centigrade)
-centigrade = 0
-fahrenheit = 0
+fahrenheit=c_to_f(centigrade)
 print(centigrade, "degrees Centigrade is", fahrenheit, "degrees Fahrenheit.")
