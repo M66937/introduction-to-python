@@ -4,7 +4,13 @@
 # Subprograms
 # -------------------------
 def output5():
-  print("ooooooooooo                                                             o         o                                                                              o  #   #  o                                                                       o    #    o                                                               o  #   #  o                                                                    o         o                                                                           ooooooooooo")
+  print("ooooooooooo")
+  print("o         o")
+  print("o  #   #  o")
+  print("o    #    o")
+  print("o  #   #  o")
+  print("o         o")
+  print("ooooooooooo")
 # -------------------------
 # Main program
 # -------------------------
