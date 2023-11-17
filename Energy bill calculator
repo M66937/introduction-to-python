@@ -1,0 +1,11 @@
+def energy_cost(previous_meter_reading,current_meter_reading,calorific_value):
+  units_used=current_meter_reading-previous_meter_reading
+  kilowatt_hours=units_used*1022*(calorific_value/3.6)
+  cost=round(0.0284*kilowatt_hours)
+  return round(cost)
+
+previous_meter_reading=int(input("enter the previous meter reading:"))
+current_meter_reading=int(input("enter the current meter reading:"))
+calorific_value=39.3
+cost=energy_cost(previous_meter_reading,current_meter_reading,calorific_value)
+print(cost)
