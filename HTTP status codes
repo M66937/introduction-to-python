@@ -1,0 +1,21 @@
+# HTTP status codes program
+
+# -------------------------
+# Subprograms
+# -------------------------
+def http_status(status):
+  if code==400:
+    print("bad request")
+  elif code>=401 and code<=403:
+    print("authentication error")
+  elif code==404:
+    print("not found")
+  else:
+    print("unknown error")
+
+
+# -------------------------
+# Main program
+# -------------------------
+code = 405
+print(http_status(code))
