@@ -1,0 +1,28 @@
+# Currency converter program
+
+# -------------------------
+# Subprograms
+# -------------------------
+def exchange(gbp, currency):
+  if currency=="dollars":
+    money=1.3*gbp
+    return(money)
+  elif currency=="euros":
+    money=1.11*gbp
+    return(money)
+  elif currency=="yuan":
+    money=8.92*gbp
+    return(money)
+  elif currency=="yen":
+    money=138.44*gbp
+    return(money)
+    
+
+
+# -------------------------
+# Main program
+# -------------------------
+gbp=int(input("enter the number of great british pounds:"))
+currency=input("enter the currency(dollars,euros,yuan,yen):")
+money = exchange(gbp, currency)
+print(gbp, "GBP =",money, currency)
