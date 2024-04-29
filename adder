@@ -1,0 +1,42 @@
+# Adder program
+
+# -------------------------
+# Subprograms
+# -------------------------
+# A simple adding machine.
+def adder():
+    # Initialise variables
+    total = 0   # Total
+    top = 0     # Highest number
+    bottom = 0  # Lowest number
+    count = 0   # Count of numbers
+    ave = 0     # Average
+    complete = False
+    # Repeat until sentinel value entered 'e'
+    while not complete:
+        data = input("Enter number: ")
+        # Add the number if it is not the sentinel
+        if data != "e":
+            number = float(data)
+            total = total + number
+            count = count + 1
+            # Set the highest number
+            if number > top:
+                top = number
+            # Set the lowest number
+            if count == 1 or number < bottom:
+                bottom = number
+        else:
+            complete = True
+            # Prevent a division by zero error
+            if count > 0:
+                ave = total / count
+            else:
+                ave = 0
+    print("Total:", total, "Top:", top, "Bottom:", bottom, "Ave:", ave)
+
+
+# -------------------------
+# Main program
+# -------------------------
+adder()
